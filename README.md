@@ -1,2 +1,2 @@
 # PROJECTS-js
-=> JAVA-SCRIPT Mini Projects
+=> JAVA-SCRIPT Mini Projects.
