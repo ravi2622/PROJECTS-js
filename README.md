@@ -2,5 +2,5 @@
 => JAVA-SCRIPT Mini Projects.
 
 # PROJET Name
-=> live-clock/n
+=> live-clock
 => Weather-App
