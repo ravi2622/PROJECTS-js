@@ -2,6 +2,7 @@ let btn = document.querySelector("button");
 let inp = document.querySelector("input");
 let ul = document.querySelector("ul");
 
+function events() {
 btn.addEventListener("click", () => {
     console.log(inp.value);
 
@@ -16,6 +17,18 @@ btn.addEventListener("click", () => {
 
     inp.value = "";
 });
+};
+
+btn.addEventListener("click", () => {
+    events();
+});
+
+body.addEventListener("keypress", (event) => {
+    // console.log(event);
+    if (event.key == "Enter") {
+        events();
+    }
+});
 
 ul.addEventListener("click", (event) => {
     console.log(event);
@@ -24,7 +37,7 @@ ul.addEventListener("click", (event) => {
 
     let par = targets.parentElement;
 
-    if(targetNode == "BUTTON") {
+    if (targetNode == "BUTTON") {
         par.remove();
     }
 });

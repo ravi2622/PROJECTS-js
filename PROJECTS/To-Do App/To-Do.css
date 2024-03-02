@@ -14,6 +14,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    user-select: none;
 }
 
 .container {
@@ -69,6 +70,7 @@ ul {
     align-items: center;
     flex-wrap: wrap; 
     gap: 10px;
+    /* background-color: red; */
   }
 
 .list {
@@ -80,12 +82,20 @@ ul {
 }
 
 .del {
-    width: 5vmin;
-    height: 5vmin;
+    width: 4vmin;
+    height: 4vmin;
     background-color: #121212;
-    padding: 0 10px 0 10px;
+    /* padding: 0 10px 0 10px; */
     border-radius: 5px;
     border: none;
     color: white;
     margin-left: 5px;
+}
+
+li {
+    padding: 5px 5px 5px 5px;
+    height: 6vmin;
+    background-color: rgba(0, 179, 255, 0.256);
+    align-items: center;
+    border-radius: 4px;
 }
