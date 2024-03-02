@@ -1,6 +1,7 @@
 let btn = document.querySelector("button");
 let inp = document.querySelector("input");
 let ul = document.querySelector("ul");
+let body = document.querySelector("body");
 
 function events() {
 btn.addEventListener("click", () => {
