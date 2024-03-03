@@ -8,5 +8,5 @@
 => Tic-Tac-Tok game
 => To-Do App
 
-# PROJECT perpus
-for learn
+# PROJECT Purpause
+for learn javascript logic
