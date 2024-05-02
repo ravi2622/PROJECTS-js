@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List for the User</title>
+    <link rel="stylesheet" href="/show.css">
+</head>
+
+<body>
+    <div class="maincontener">
+        <div class="task">
+            <div class="menu">
+                <h3>Username = @<%= p.username %>
+                </h3>
+                <hr>
+                <h3>Id Is = <%= p.id %>
+                </h3>
+            </div>
+
+            <div class="btn">
+                <a class="btna" href="http://localhost:8080/show/<%= p.id %>"><button>Add New Task</button></a>
+                <hr>
+                <a class="btna" href="http://localhost:8080/taskmanager"><button>Back Login Page</button></a>
+            </div>
+
+            <div class="listconstainer">
+                
+                <% for(task of p.task) {%>
+                    <div class="list">
+                        <h1>
+                            <%= task %>
+                        </h1>
+                        <button class="remove">
+                            <img src="/circle-check-big.png" alt="taskIcon" class="taskicon">
+                        </button>
+                    </div>
+                <% } %>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="/show.js" defer></script>
+</body>
+
+</html>

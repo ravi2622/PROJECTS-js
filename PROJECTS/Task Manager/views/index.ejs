@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasl Manager System</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+    <div class="maincontener">
+        <h1>Welcome, This is a Task Manager</h1>
+
+        <form action="/show" method="post" autocomplete="off" id="loginPage">
+            <label for="username">Enter Username</label>
+            <input type="text" id="username" name="username">
+
+            <br>
+            <br>
+
+            <label for="id">Enter User Id</label>
+            <input type="text" name="id" id="id">
+
+            <br>
+            <br>
+
+            <button class="submitBtn">Submit</button>
+
+            
+        </form>
+            <a href="http://localhost:8080/newuser">
+                <button class="newuser">
+                    New User
+                </button>
+            </a>
+    </div>
+
+    <script src="/loginPage.js"></script>
+</body>
+
+</html>

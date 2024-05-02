@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome, New User</h1>
+    <form action="/taskmanager" method="post">
+        <input type="text" name="username" id="username">
+        <input type="text" name="id" id="id">
+        <ul>
+            <li>
+                <input type="text" name="tasklist" id="tasklist" placeholder="Enter New Task">
+            </li>
+        </ul>
+        <button>submit</button>
+    </form>
+
+    <button class="taskclear">Add Task</button>
+
+    <script>
+        let taskclear = document.querySelector(".taskclear");
+        let tasklist = document.querySelector("#tasklist");
+        let ul = document.querySelector("ul")
+
+        taskclear.addEventListener("click", () => {
+            let newinput = document.createElement("input");
+            newinput.setAttribute("type", "text");
+            newinput.setAttribute("name", "tasklist");
+            newinput.setAttribute("id", "tasklist");
+            newinput.setAttribute("placeholder", "Enter New Task");
+            ul.appendChild(newinput);
+        });
+    </script>
+</body>
+</html>
