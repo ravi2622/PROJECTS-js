@@ -3,10 +3,19 @@
 
 # PROJET Name
 => live-clock
+#
 => Weather-App
+#
 => music-player
+#
 => Tic-Tac-Tok game
+#
 => To-Do App
+#
+=> Auto-Text-effect
+#
+=> Task-Manager
+#
 
 # PROJECT Purpause
 for learn javascript logic
