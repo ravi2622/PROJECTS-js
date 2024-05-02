@@ -14,6 +14,7 @@ app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 
 app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "src")));
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride('_method'));
 
