@@ -104,10 +104,9 @@ app.get("/show/:id", (req, res) =>  {
     };
 });
 
-app.post("/show", (req, res) => {
-    
+app.post("/taskmanager", (req, res) => {
+    res.redirect("/taskmanager");
 });
-
 
 let tasks = [
     {
