@@ -1,20 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add new Task</title>
+    <title>Edit Task & Add new Task</title>
     <link rel="icon" href="/pngegg.png">
+    <link rel="stylesheet" href="/newtask.css">
 </head>
+
 <body>
-    <form action="/taskmanager" method="post">
-        <ul>
-            <% for(tasks of task.task) {%>
-                <input type="text" name="tasklist" id="tasklist" value="<%= tasks %>">
-            <% } %>
-        </ul>
-        <!-- <input type="text" name="newtask"> -->
-        <button>submit</button>
-    </form>
+    <div class="maincontener">
+        <div class="userinfo">
+            <form action="/show/<%= task.id %>/?_method=PATCH" method="post" autocomplete="off">
+                <div class="inputinfo">
+                    <div class="btns">
+                        <button class="taskclear" type="button">Add Task</button>
+                        <hr>
+                        <button>submit</button>
+                    </div>
+                </div>
+                <br>
+                <div class="list">
+                    <ul>
+                        <% for(tasks of task.task) {%>
+                            <li>
+                                <input type="text" name="tasklist" id="tasklist" value="<%= tasks %>">
+                            </li>
+                            <% } %>
+                    </ul>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="/newtask.js"></script>
 </body>
+
 </html>
